@@ -10,8 +10,9 @@ handlers:
   upload: favicon\.ico
   
 - url: /
-  static_files: index.html
-
+  static_files: static/HTML/index.html
+  upload: static\/HTML\/index\.html
+  
 - url: /.*
   script: helloworld.application
 
