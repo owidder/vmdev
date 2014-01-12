@@ -8,8 +8,11 @@ handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
+  
+- url: /
+  static_files: index.html
 
-- url: /.*
+- url: /.+
   script: helloworld.application
 
 libraries:
