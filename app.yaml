@@ -12,7 +12,7 @@ handlers:
 - url: /
   static_files: index.html
 
-- url: /.+
+- url: /.*
   script: helloworld.application
 
 libraries:
