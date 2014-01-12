@@ -5,5 +5,5 @@ class HelloWorld(webapp2.RequestHandler):
         self.response.out.write('Hello ' + self.request.get('name'))
 
 application = webapp2.WSGIApplication([
-    ('/', HelloWorld)
+    ('/sayhello', HelloWorld)
 ], debug=True)
